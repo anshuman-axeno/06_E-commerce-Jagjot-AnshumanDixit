@@ -1,6 +1,8 @@
 @use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as *;
 @use 'layout/signup';
+@use 'layout/navbar';
+
 
 @font-face {
   font-family: "Integral CF";
@@ -10,7 +12,7 @@
 
 @font-face {
   font-family: "Integral CF";
-  src: url("../assets/fonts/");
+  src: url("../assets/fonts/Fontspring-DEMO-integralcf-bold.otf");
   font-weight: 700;
 }
 
@@ -36,4 +38,6 @@ h4,
 h5,
 h6{
   font-family: "Integral CF";
+  font-weight:700;
 }
+
