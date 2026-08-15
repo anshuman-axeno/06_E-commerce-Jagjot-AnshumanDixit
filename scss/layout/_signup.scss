@@ -1,12 +1,17 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 .signup{
+  @include flex-center;
   background-color:black;
   color:white;
   height:$ht2;
   
 }
-
 .signup bold{
-  
+  font-weight: 500;
+}
+
+.signup p{
+  height: 1.1rem;
 }
