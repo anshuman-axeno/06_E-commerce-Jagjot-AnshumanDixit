@@ -15,8 +15,13 @@
 }
 
 @mixin container {
-  width: 90%;
-  max-width: $container-width;
+  width: calc(100% - 200px);
   margin: 0 auto;
+}
+
+@mixin button{
+  background-color: black;
+  color: white;
+  border:none;
 }
 
