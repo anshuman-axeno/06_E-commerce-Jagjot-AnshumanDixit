@@ -27,4 +27,4 @@ A front-end e-commerce website built with HTML, SCSS, and JavaScript. The projec
 
 ## Authors
 
-Jagjot Singh and Anshuman Dixit
+Anshuman Dixit
