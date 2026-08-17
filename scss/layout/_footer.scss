@@ -1,0 +1,125 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+footer{
+  background-color: $cream;
+}
+.newsletter {
+  width: 85%;
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 1.5rem;
+  padding: 3% 4%;
+  @include flex-between;
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 30%;
+}
+
+.newsletter-div {
+  background-color: white;
+  border-radius: 3rem;
+  padding: 0.8rem 1.5rem;
+  @include flex-center;
+  gap: 0.5rem;
+}
+
+.mail-icon {
+  width: 1.2rem;
+}
+
+.email-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: "Satoshi";
+}
+
+.subscribe-btn {
+  @include button;
+  background-color: white;
+  color: black;
+  border-radius: 3rem;
+  height: 3rem;
+}
+
+.footer-main {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 4%;
+  @include flex-between;
+  align-items: flex-start;
+}
+
+.footer-about {
+  width: 25%;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-about p {
+  color: grey;
+  margin-bottom: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.socials img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.footer-links {
+  @include flex-between;
+  align-items: flex-start;
+  width: 65%;
+}
+
+
+.footer-col h3 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  width: 85%;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+  padding: 2% 0;
+  @include flex-between;
+}
+
+.footer-bottom p {
+  color: grey;
+}
+
+.payment-icons {
+  height: 1.5rem;
+}

@@ -1,0 +1,113 @@
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.cart {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.cart-div {
+  @include flex-between;
+  align-items: stretch;
+  margin-top: 5%;
+}
+
+.cart-items {
+  width: 45%;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 1rem;
+  padding: 3%;
+
+}
+
+.cart-price {
+  width: 45%;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 1rem;
+  padding: 3%;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.item-img {
+  width: 20%;
+}
+
+.item-info p {
+  color: grey;
+}
+
+.item-price {
+  font-weight: 700;
+}
+
+.delete-btn {
+  width: 1.2rem;
+  height: 1.2rem;    
+  align-self: flex-start;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.quantity-box {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cart-price h3 {
+  margin-bottom: 1.5rem;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  color: grey;
+}
+
+.discount-price {
+  color: red;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Satoshi";
+  border-top: 1px solid rgb(230, 230, 230);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.promo-input {
+  width: 60%;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 3rem;
+  padding: 0.8rem 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.apply-btn {
+  @include button;
+  border-radius: 3rem;
+  padding: 0.8rem 1.5rem;
+}
+
+.checkout-btn {
+  @include button;
+  display: block;
+  width: 100%;
+  border-radius: 3rem;
+  height: 3rem;
+  margin-top: 1rem;
+}

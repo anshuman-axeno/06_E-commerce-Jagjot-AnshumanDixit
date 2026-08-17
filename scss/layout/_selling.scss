@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.selling-heading{
+  @include flex-center;
+  align-self: center;
+  margin-top: 150px ;
+  font-size:3.5rem !important;
+}
+
+.selling-products{
+  margin: 100px;
+  margin-top: 70px;
+  @include flex-between();
+  font-weight: 400;
+  //flex-wrap: wrap;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar{
+    display:none;
+  }
+}

@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+.customers-div{
+  width:85%;
+  margin:0 auto;
+
+  h2{
+    font-size: 3.5rem;
+    align-self: flex-start;
+  }
+
+  .reviews{
+      @include flex-between;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      overflow-y: auto;
+      &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+
+  article{
+    border:1px solid lightgray;
+    border-radius:5%;
+    min-width:30%;
+    margin-bottom: 70px;
+    padding:2%;
+  }
+}
