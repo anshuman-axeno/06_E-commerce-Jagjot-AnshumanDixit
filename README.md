@@ -17,41 +17,6 @@ A front-end e-commerce website built with HTML, SCSS, and JavaScript. The projec
 - Promo code system supporting two codes (SAVE10 and SAVE20), with invalid code handling
 - Checkout button that completes the order and clears the cart
 
-## Project Structure
-
-├── index.html
-├── product.html
-├── cart.html
-├── css/
-│   └── main.css
-├── scss/
-│   ├── abstracts/
-│   │   ├── _variables.scss
-│   │   └── _mixins.scss
-│   ├── layout/
-│   │   ├── _navbar.scss
-│   │   ├── _arrivals.scss
-│   │   ├── _selling.scss
-│   │   ├── _browse.scss
-│   │   ├── _reviews.scss
-│   │   └── _footer.scss
-│   ├── pages/
-│   │   ├── _product.scss
-│   │   └── _cart.scss
-│   └── main.scss
-├── scripts/
-│   ├── main.js
-│   ├── products.js
-│   ├── product.js
-│   └── cart.js
-└── assets/
-    └── images/
-
-## How to Run
-
-1. Clone the repository
-2. Open the project folder in a code editor
-3. Run index.html using a local server, such as the Live Server extension in VS Code
 
 ## Technologies Used
 
